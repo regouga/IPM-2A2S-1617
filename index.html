@@ -1,0 +1,1954 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Com.ISTo</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+  <div id="main" align="center">
+
+  	<div id="statusbar">
+      <table style="width: 1200; height: 70px;">
+        <tr>
+          <td style="width: 300px; text-align: left;"><div id="menu_position"></div></td>
+          <td style="width: 600px;"><div><img src="assets/logo.png" id="logo"></div></td>
+          <td style="width: 300px; text-align: right;"><div id="clock"></div></td>
+          </tr>
+        </table>
+    </div>
+
+
+
+
+    <div id="ajuda_main" style="display: none;">
+
+      <div class="ajuda_div" id="ajuda_principal">
+        <ol style="list-style-type: disc ">
+          <li>Para fazer um novo pedido e/ou ver a carta, toque em "<b>Novo Pedido</b>".</li>
+          <li>Após ter feito um pedido, para poder visualizá-lo, alterá-lo, cancelá-lo ou ver quanto tempo falta até ser servido, toque em "<b>Ver e Alterar Pedidos</b>".</li>
+          <li>Se pretender ver a conta e/ou pagá-la, toque em "<b>Ver ou Pagar Conta</b>".</li>
+          <li>Para controlar a reprodução de música da sua mesa, votar no canal que pretende ver na televisão do restaurante ou ver o estado de ocupação dos sanitários, toque em "<b>Serviços</b>".</li>
+          <li>Caso tenha dúvidas, poderá a qualquer momento tocar em "<b>Chamar Empregado</b>".</li>
+        </ol>
+      </div>
+
+      <div class="ajuda_div" id="ajuda_novopedido">
+        <ol style="list-style-type: disc ">
+          <li>Para fazer um pedido, toque nas categorias da tabela da esquerda e escolha os items a escolher na tabela da direita, tocando no ícone "+".</li>
+          <li>Para obter uma breve descrição sobre algum prato, toque no ícone de informação que se encontra ao lado direito de cada prato.</li>
+          <li>Verá todos os itens selecionados na tabela do meio. Para os personalizar, toque em "Personalizar". Para os remover, toque no ícone "x".</li>
+          <li>Quando estiver pronto para pedir, toque em "Finalizar Pedido."</li>
+          <li>Poderá fazer novos pedidos sempre que quiser, sendo que para tal só tem de voltar a este ecrã e repetir o processo.</li>
+        </ol>
+      </div>
+
+      <div class="ajuda_div" id="ajuda_conta">
+        <ol style="list-style-type: disc ">
+          <li>Neste ecrã poderá consultar e/ou pagar a conta total até ao momento.</li>
+          <li>No lado esquerdo encontram-se disponíveis os métodos de pagamento disponíveis, atualmente <b>Dinheiro</b> e <b>Multibanco</b>.</li>
+          <li>Se decidir pagar com dinheiro o empregado recolherá o dinheiro pouco depois de ser requisitado.</li>
+          <li>Se decidir pagar com Multibanco insira o cartão no terminal multibanco e siga as instruções do ecrã.</li>
+          <li>Uma vez que o processo de pagamento é concluído a refeição será dada como terminada, reiniciando o sistema. </li>
+        </ol>
+      </div>
+
+      <div class="ajuda_div" id="ajuda_musica">
+        <ol style="list-style-type: disc ">
+          <li>Neste ecrã pode controlar a reprodução de música da sua mesa.</li>
+          <li>Para começar a reproduzir, toque no botão de 'reprodução'. Para pausar a reprodução, toque no botão de 'pausa'.</li>
+          <li>Poderá mudar a música a reproduzir, tocando nos botões de 'próximo' e 'anterior'.</li>
+          <li>Pode também controlar o volume de reprodução, tocando nos botões de 'mais volume' e 'menos volume'.</li>
+          <li>Caso tenha dúvidas, poderá a qualquer momento tocar em "Chamar Empregado".</li>
+        </ol>
+      </div>
+
+      <div class="ajuda_div" id="ajuda_wc">
+        <ol style="list-style-type: disc ">
+          <li>Neste ecrã pode verificar a ocupação atual dos WC's masculino e feminino.</li>
+          <li>Na tabela que se encontra no centro do ecrã pode encontrar o estado atual dos mesmos, 'LIVRE' ou 'OCUPADO'.</li>
+          <li>Já na tabela que encontra à direita pode entrar em fila de espera para qualquer uma delas carregando no botão desejado e em 'Confirmar'.</li>
+          <li>Quando for a sua vez receberá uma notificação dizendo que o WC desejado já se encontra livre.</li>
+          <li>Caso tenha dúvidas, poderá a qualquer momento tocar em "Chamar Empregado".</li>
+        </ol>
+      </div>
+
+      <div class="ajuda_div" id="ajuda_servicos">
+        <ol style="list-style-type: disc ">
+          <li>Controle neste menu os serviços do restaurante.</li>
+          <li>Toque em "Ocupação dos W.C.'s" para ver a ocupação dos sanitários, quantas pessoas estão em fila de espera e para se colocar em fila de espera.</li>
+          <li>Toque em "Votação do Canal de TV" para votar no seu canal favorito para ver na televisão do restaurante. <br>O canal que ficará selecionado na televisão é o que tiver mais votos.</li>
+          <li>Toque em "Controlo de Música" para controlar a reprodução de música da sua mesa.</li>
+          <li>Caso tenha dúvidas, poderá a qualquer momento tocar em "Chamar Empregado".</li>
+        </ol>
+      </div>
+
+      <div class="ajuda_div" id="ajuda_tv">
+        <ol style="list-style-type: disc ">
+          <li>Neste ecrã pode votar no seu canal de televisão favorito.</li>
+          <li>Escolha o seu canal favorito na tabela à direita e toque em "Confirmar".</li>
+          <li>O canal que tiver mais votos é o que será transmitido na televisão do restaurante.</li>
+          <li>Pode votar de 5 em 5 minutos.</li>
+          <li>Caso tenha dúvidas, poderá a qualquer momento tocar em "Chamar Empregado".</li>
+        </ol>
+      </div>
+
+
+      <button class="main_menu_buttons" id="voltar" style="margin-right: 880px; margin-top: 20px;" onclick="backAjuda();">
+        <table>
+          <tr>
+            <td style="width: 50px"><img src="assets/back.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+            <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Voltar</td>
+          </tr>
+        </table>
+      </button>
+
+    </div>
+
+
+
+    <div id="empregado_main" style="display: none;">
+
+      <div class="empregado_div">
+      <div id="empregado_main_1">Deseja chamar o empregado?</div>
+      <div id="empregado_main_2" style="display: none;">O empregado está a caminho da sua mesa.</div>
+      </div>
+
+      <div id="botoes_sim_nao">
+      <button class="main_menu_buttons" id="sim" onclick="hideandshow(empregado_main_1, empregado_main_2); hideandshow(botoes_sim_nao, botao_voltar); setTimeout(showEmpregado, 180000);" style="margin-right: 870px; margin-top: 20px; background-color: #82FA58;">
+        <table>
+          <tr>
+            <td style="width: 50px"><img src="assets/check.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+            <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Sim</td>
+          </tr>
+        </table>
+      </button>
+
+      <button class="main_menu_buttons" id="nao" onclick="back(); hide(botao_voltar);" style="margin-right: 870px; margin-top: 20px; background-color: #FA5858;">
+        <table>
+          <tr>
+            <td style="width: 50px"><img src="assets/cross.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+            <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Não</td>
+          </tr>
+        </table>
+      </button>
+      </div>
+
+      <div id="botao_voltar" style="display: none;">
+      <button class="main_menu_buttons" style="margin-right: 870px; margin-top: 20px;" id="voltar" onclick="back();">
+              <table>
+                <tr>
+                  <td style="width: 50px"><img src="assets/back.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+                  <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Voltar</td>
+                </tr>
+              </table>
+            </button>
+      </div>
+
+    </div>
+
+
+
+
+
+    <div id="mainmenu">
+
+    <div id="middletable" style="display: inline-block; margin-top: 30px;">
+    	 <div id="bemvindo_table1" style="width: 600px; text-align: center; font-size: 50px;">Bem-Vindo!</div>
+         <div id="bemvindo_table2" style="width: 600px; text-align: center; font-size: 20px;">Descubra o nosso prato do dia:</div>
+         <img src="assets/main-menu/bitoque.png" style="margin-top: 25px;">
+
+    </div>
+
+    <div id="middletable2" style="display: none; margin-top: 30px;">
+    	 <div id="bemvindo_table3" style="width: 550px; text-align: center; font-size: 30px;">O SEU PEDIDO FOI CONCLUÍDO COM SUCESSO!</div>
+         <div id="bemvindo_table4" style="width: 550px; text-align: center; font-size: 20px;"><p>Pode consultar o estado do seu pedido e alterar o mesmo em <b>"Ver e Alterar Pedidos"</b></div>
+         <img src="assets/check.png" style="margin-top: 25px; width: 100px; height: 100px">
+    </div>
+
+
+
+
+
+    <table id= "righttable" class="table_buttons" style="float: right; padding-right: 18px; display: inline-block;">
+    	<tr>
+
+            <td>
+
+            <div style="vertical-align: middle;">
+              <div style="display: inline-block;">
+                <button class="main_menu_buttons" onclick="hide(mainmenu); show_alt(empregado_main); statusbar_chamar_empregado();" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Empregado</button>
+              </div>
+
+              <div style="display: inline-block;">
+               <button class="main_menu_buttons" onclick="hide(mainmenu); show_alt(ajuda_main); statusbar_ajuda(); show_alt(ajuda_principal);" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Ajuda</button>
+              </div>
+            </div>
+            </td>
+    	</tr>
+    	<tr>
+
+            <td>
+
+            <button class="main_menu_buttons" id="servicos" onclick="hideandshow(mainmenu, servicos_div); statusbar_servicos(); setCurrentScreen(4); ">
+                <table>
+                  <tr>
+                    <td style="width: 50px"><img src="assets/main-menu/buttons/servicos.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+                    <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Serviços</td>
+                  </tr>
+                </table>
+              </button>
+			</td>
+    	</tr>
+
+    </table>
+      <table id="lefttable" class="table_buttons" style="display: inline-block; float: left; padding-left: 18px;">
+
+          <tr>
+
+            <td>
+              <button class="main_menu_buttons" id="novo_pedido" onclick="hideandshow(mainmenu, newpedido); setCurrentScreen(5); statusbar_novo_pedido(); pratos_pratosdodia(); selectedButton(pratos_dia); clearButtons5(pratos_ent, pratos_beb, pratos_car, pratos_pei, pratos_sob); lockButton('finalizar_pedido');">
+                <table>
+                  <tr>
+                    <td style="width: 50px"><img src="assets/main-menu/buttons/npedido.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+                    <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Novo Pedido</td>
+                  </tr>
+                </table>
+              </button>
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>
+            <button class="main_menu_buttons" id="ver_e_alterar_estado_pedido" onclick="hideandshow(mainmenu, estadopedido); statusbar_estado_pedido();">
+                <table>
+                  <tr>
+                    <td style="width: 50px"><img src="assets/main-menu/buttons/vapedidos.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+                    <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Ver e Alterar Pedidos</td>
+                  </tr>
+                </table>
+              </button>
+            </td>
+
+          </tr>
+
+
+
+          <tr>
+
+            <td>
+              <button class="main_menu_buttons" id="ver_ou_pagar_conta" onclick="hideandshow(mainmenu, contafinal); statusbar_conta(); setCurrentScreen(6);">
+                <table>
+                  <tr>
+                    <td style="width: 50px"><img src="assets/main-menu/buttons/euro.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+                    <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Ver ou Pagar Conta</td>
+                  </tr>
+                </table>
+              </button>
+            </td>
+
+          </tr>
+
+      </div>
+    </table>
+  </div>
+
+
+  <div id="servicos_div" style="display: none;">
+    <div id="main_menu_servicos">
+      <table class="table_buttons" id="empregado_ajuda" style="display: inline-block; float: right; padding-right: 18px;">
+        <tr>
+          <td>
+
+           <div style="display: inline-block;">
+                <button class="main_menu_buttons" onclick="hide(servicos_div); show_alt(empregado_main); statusbar_chamar_empregado();" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Empregado</button>
+              </div>
+
+              <div style="display: inline-block;">
+               <button class="main_menu_buttons" onclick="hide(servicos_div); show_alt(ajuda_main); statusbar_ajuda(); show_alt(ajuda_servicos);" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Ajuda</button>
+              </div>
+
+          </td>
+        </tr>
+      </table>
+
+      <div id="servicos_menu_entrada" style="display: inline-block">
+        <div id="servicos_menu_entrada_1">Veja o estado de ocupação dos sanitários e coloque-se em fila de espera.</div>
+        <div id="servicos_menu_entrada_2">Vote no seu canal de televisão favorito.</div>
+        <div id="servicos_menu_entrada_3">Controle a reprodução da música na sua mesa.</div>
+      </div>
+
+      <table class="table_buttons" style="display: inline-block; float: left; padding-left: 18px;">
+
+          <tr>
+            <td>
+
+            <button class="main_menu_buttons" id="ocupacao_wcs" onclick="show(ocupacao_dos_wcs); hide(controlo_da_musica); hide(canal_tv); selectedButton(ocupacao_wcs);
+            clearButtons(votacao_canal_tv, controlo_musica); setCurrentScreen(3); showEstadoMulheres(); showEstadoHomens(); nrMulheres(); nrHomens(); setInterval(remFilaMulheres, 15000);
+            setInterval(showEstadoMulheres, 5000);  setInterval(nrMulheres, 5000); setInterval(remFilaHomens, 15000); setInterval(showEstadoHomens, 5000);  setInterval(nrHomens, 5000); statusbar_wc();
+            hide(empregado_ajuda); hide(servicos_menu_entrada); setInterval(addFilaHomens, 30000); setInterval(addFilaMulheres, 30000);">
+              <table>
+                <tr>
+                  <td style="width: 50px"><img src="assets/wc/wc.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+                  <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Ocupação dos W.C.'s</td>
+                </tr>
+              </table>
+            </button>
+            </td>
+            </tr>
+
+            <tr>
+            <td>
+
+            <button class="main_menu_buttons" id="votacao_canal_tv" onclick="show(canal_tv); hide(controlo_da_musica); hide(ocupacao_dos_wcs); selectedButton(votacao_canal_tv); clearButtons(ocupacao_wcs, controlo_musica); setCurrentScreen(2); statusbar_tv(); hide(empregado_ajuda); hide(servicos_menu_entrada); updateVotos();">
+              <table>
+                <tr>
+                  <td style="width: 50px"><img src="assets/tv-control/tvcontrol.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+                  <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Votação do Canal de TV</td>
+                </tr>
+              </table>
+            </button>
+            </td>
+            </tr>
+
+            <tr>
+            <td>
+
+            <button class="main_menu_buttons" id="controlo_musica" onclick="show(controlo_da_musica); hide(canal_tv); hide(ocupacao_dos_wcs); selectedButton(controlo_musica); clearButtons(ocupacao_wcs, votacao_canal_tv); setCurrentScreen(1); statusbar_musica(); hide(empregado_ajuda); hide(servicos_menu_entrada);">
+              <table>
+                <tr>
+                  <td style="width: 50px"><img src="assets/music-control/musiccontrol.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+                  <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Controlo de Música</td>
+                </tr>
+              </table>
+            </button>
+
+            </td>
+            </tr>
+
+            <tr>
+            <td>
+
+            <button class="main_menu_buttons" id="voltar" onclick="hide(controlo_da_musica); hide(canal_tv); hide(ocupacao_dos_wcs); hideandshow(servicos_div, mainmenu); statusbar_empty(); setCurrentScreen(0); clearButtons(ocupacao_wcs, votacao_canal_tv); clearButton(controlo_musica); hide(empregado_ajuda); show(empregado_ajuda); show_alt(servicos_menu_entrada);">
+              <table>
+                <tr>
+                  <td style="width: 50px"><img src="assets/back.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+                  <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Voltar</td>
+                </tr>
+              </table>
+            </button>
+            </td>
+          </tr>
+      </div>
+    </table>
+  </div>
+
+  <div id="controlo_da_musica" style="display: none;">
+    <script type="text/javascript">statusbar_musica();</script>
+
+  	<audio id="tdcc"><source src="assets/music-control/music/tdcc.mp3" type="audio/mpeg"></audio>
+  	<audio id="gd"><source src="assets/music-control/music/gd.mp3" type="audio/mpeg"></audio>
+  	<audio id="lp"><source src="assets/music-control/music/lp.mp3" type="audio/mpeg"></audio>
+  	<audio id="cf"><source src="assets/music-control/music/cf.mp3" type="audio/mpeg"></audio>
+  	<audio id="coldplay"><source src="assets/music-control/music/coldplay.mp3" type="audio/mpeg"></audio>
+    <audio id="pedro"><source src="assets/music-control/music/pedro.mp3" type="audio/mpeg"></audio>
+    <audio id="adele"><source src="assets/music-control/music/adele.mp3" type="audio/mpeg"></audio>
+    <audio id="ed"><source src="assets/music-control/music/ed.mp3" type="audio/mpeg"></audio>
+    <audio id="daft"><source src="assets/music-control/music/daft.mp3" type="audio/mpeg"></audio>
+    <audio id="bruno"><source src="assets/music-control/music/bruno.mp3" type="audio/mpeg"></audio>
+    <audio id="muse"><source src="assets/music-control/music/muse.mp3" type="audio/mpeg"></audio>
+    <audio id="pearl"><source src="assets/music-control/music/pearl.mp3" type="audio/mpeg"></audio>
+    <audio id="or"><source src="assets/music-control/music/or.mp3" type="audio/mpeg"></audio>
+    <audio id="u2"><source src="assets/music-control/music/u2.mp3" type="audio/mpeg"></audio>
+    <audio id="mumford"><source src="assets/music-control/music/mumford.mp3" type="audio/mpeg"></audio>
+    <audio id="xx"><source src="assets/music-control/music/xx.mp3" type="audio/mpeg"></audio>
+
+
+
+     <div id="tabela_controlos_musica" style="float: right; padding-right: 18px;">
+
+
+       <!-- 3 tabelas: uma para os controlos de play, outra para o volume, outra para o input-->
+       <table class="table_buttons">
+
+          <tr>
+
+            <td>
+
+            <div style="display: inline-block;">
+                <button class="main_menu_buttons" onclick="hide(controlo_da_musica); hide(servicos_div); show_alt(empregado_main); statusbar_chamar_empregado();" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Empregado</button>
+              </div>
+
+              <div style="display: inline-block;">
+               <button class="main_menu_buttons" onclick="hide(controlo_da_musica); hide(servicos_div); show_alt(ajuda_main); show_alt(ajuda_musica); statusbar_ajuda();" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Ajuda</button>
+              </div>
+
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>
+            <div style="display: inline-block;">
+             <button class="main_menu_buttons" onclick="previousMusic();" style="width: 85px; vertical-align: middle;">
+                <div style="display: inline;"><img src="assets/music-control/icons/previous.png" style="height: 60px; width: 60px;"></div>
+              </button>
+              </div>
+
+              <div style="display: inline-block;">
+              <div id="play" onclick="playAudio(); hide(play); show(pause);">
+                <button class="main_menu_buttons" style="width: 90px; vertical-align: middle;">
+                    <img id="play_button" src="assets/music-control/icons/play.png" style="height: 60px; width: 60px;">
+                </button>
+              </div>
+
+              <div id="pause" onclick="pauseAudio(); hideandshow(pause, play);" style="display: none;">
+                <button class="main_menu_buttons" style="width: 90px; vertical-align: middle;">
+                  <img id="pause_button" src="assets/music-control/icons/pausetest.png" style="height: 60px; width: 60px;">
+                </button>
+              </div>
+              </div>
+
+                <div style="display: inline-block;">
+                <button class="main_menu_buttons" onclick="nextMusic();" style="width: 85px; vertical-align: middle;">
+                  <div style="display: inline;"><img src="assets/music-control/icons/next.png" style="height: 60px; width: 60px;"></div>
+                </button>
+                </div>
+              </td>
+          </tr>
+
+          <tr>
+            <td>
+            <div style="display: inline-block;">
+              <button class="main_menu_buttons" onclick="lessVolume(); hide(volume_inicial);" style="line-height: 9px; vertical-align: middle; padding-bottom: 10px; width: 135px;">
+                <div style="display: inline;"><img src="assets/music-control/icons/lessvolume.png" style="height: 60px; width: 60px;"></div>
+              </button>
+              </div>
+
+              <div style="display: inline-block;">
+              <button class="main_menu_buttons" onclick="moreVolume();" style="line-height: 9px; vertical-align: middle; padding-bottom: 10px; width: 134px;">
+                <div style="display: inline;"><img src="assets/music-control/icons/morevolume.png" style="height: 60px; width: 60px;"></div>
+              </button>
+              </div>
+              </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="nowplaying" style="width: 600px; padding-top: 30px; line-height: 0px;">
+        <div id="artwork"></div>
+
+        <script type="text/javascript">showMusic();</script>
+        <p><div id="musica_div" style="font-size: 15px;"></div></p>
+
+        <script type="text/javascript">showVolume();</script>
+        <p><div id="volume_div" style="font-size: 15px;"></div></p>
+      </div>
+
+  </div>
+
+
+  <div id="canal_tv" style="display: none;">
+
+    <div class="container" id="grafico" style="display: inline-block; text-align: left">
+      <div style="text-align: center; font-size: 27.5px; padding-bottom: 15px;">Canais mais votados</div>
+      <div class="chart">
+        <table><tr><td style="width: 120px;"><div id="canal1" style="color: black;"></div></td><td><div id="1omaisvotado" style="background-color: #444444;"></div></td><td style="color: red; padding-left: 10px;">NO AR</td></tr></table>
+        <table><tr><td style="width: 120px;"><div id="canal2" style="color: black;"></div></td><td><div id="2omaisvotado" style="background-color: #444444;"></div></td></tr></table>
+        <table><tr><td style="width: 120px;"><div id="canal3" style="color: black;"></div></td><td><div id="3omaisvotado" style="background-color: #444444;" ></div></td></tr></table>
+      </div>
+    </div>
+
+        <div id="tabela_votacao_canal_tv" style="float: right; padding-right: 18px; display: inline-block;">
+
+      	<table class="table_buttons">
+       		<tr>
+              <td>
+
+
+            <div style="display: inline-block;">
+                <button class="main_menu_buttons" onclick="hide(canal_tv); hide(servicos_div); show_alt(empregado_main); statusbar_chamar_empregado();" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Empregado</button>
+              </div>
+
+              <div style="display: inline-block;">
+               <button class="main_menu_buttons" onclick="hide(canal_tv); hide(servicos_div); show_alt(ajuda_main); show_alt(ajuda_tv); statusbar_ajuda();" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Ajuda</button>
+              </div>
+              </td>
+              </tr>
+
+           	<td>
+           	<p style="font-size:20px;">Escolha o seu canal favorito:</p>
+
+      		<div id="scrollbar" style="width: 270px; height: 300px; border-style: solid; border-color: black; overflow-y: scroll; overflow-x: hidden;">
+              <table class="table_buttons">
+      			   <tr>
+                  <td >
+                  <div style="display: inline-block;">
+                      <button class="channel_buttons" id="rtp1" onclick="show(canal_escolhido); show(escolher_RTP1); showCanal(1); hideCanais(escolher_RTP2, escolher_SIC, escolher_TVI, escolher_SPORTTV, escolher_BTV);">
+                           <img src="assets/tv-control/rtp1_logo.png" style="height:22,38px; width: 120px;">
+                      </button>
+                  </div>
+                  </td>
+                  <td>
+                  <div style="text-align: left; margin-bottom: 15px; margin-left: 10px;">No ar:<br><b>Preço Certo</b></div>
+                  </td>
+                	</tr>
+
+                	<tr>
+                	<td style="width: 20px;">
+                	<div style="display: inline-block;">
+                      <button class="channel_buttons" id="rtp2" onclick="show(canal_escolhido); show(escolher_RTP2); showCanal(2); hideCanais(escolher_RTP1, escolher_SIC, escolher_TVI, escolher_SPORTTV, escolher_BTV)">
+                           <img src="assets/tv-control/rtp2_logo.png" style="height: 35px; width: 120px;">
+                      </button>
+                	</div>
+                	</td>
+                  <td>
+                	<div style="text-align: left; margin-bottom: 17.5px; margin-left: 10px;">No ar:<br><b>BBC: Vida Selvagem</b></div>
+                	</td>
+                	</tr>
+
+                	<tr>
+                  <td>
+                  <div style="display: inline-block;">
+                      <button class="channel_buttons" id="sic" onclick="show(canal_escolhido); show(escolher_SIC); showCanal(3); hideCanais(escolher_RTP1, escolher_RTP2, escolher_TVI, escolher_SPORTTV, escolher_BTV)">
+                      <img src="assets/tv-control/sic_logo.png" style="height: 48.375px; width: 107.43px;">
+                      </button>
+                  </div>
+                  </td>
+                  <td>
+                 	<div style="text-align: left; margin-bottom: 17.5px; margin-left: 10px;">No ar:<br><b>As Tardes da Júlia</b></div>
+                	</td>
+                	</tr>
+
+                	<tr>
+                  <td>
+                  <div style="display: inline-block;">
+                      <button class="channel_buttons" id="tvi" onclick="show(canal_escolhido); show(escolher_TVI); showCanal(4); hideCanais(escolher_RTP1, escolher_RTP2, escolher_SIC, escolher_SPORTTV, escolher_BTV)">
+                        	<img src="assets/tv-control/tvi_logo.png" style="height: 65px; width: 70px;">
+                      </button>
+                  </div>
+                  </td>
+                  <td>
+                  <div style="text-align: left; margin-bottom: 17.5px; margin-left: 10px;">No ar:<br><b>Inspetor Max</b></div>
+                  </td>
+                	</tr>
+
+      			<tr>
+                  <td>
+                  <div style="display: inline-block;">
+                     	<button class="channel_buttons" id="sporttv" onclick="show(canal_escolhido); show(escolher_SPORTTV); showCanal(5); hideCanais(escolher_RTP1, escolher_RTP2, escolher_SIC, escolher_TVI, escolher_BTV)">
+                        	<img src="assets/tv-control/sporttv_logo.png" style="height: 20.11px; width: 120px;">
+                      </button>
+                  </div>
+                  </td>
+                  <td>
+                  <div style="text-align: left; margin-bottom: 17.5px; margin-left: 10px;">No ar:<br><b>Fórmula 1 — Qualificações</b></div>
+                  </td>
+                	</tr>
+
+                	<tr>
+                  <td>
+                  <div style="display: inline-block;">
+                      <button class="channel_buttons" id="benficatv" onclick="show(canal_escolhido); show(escolher_BTV); showCanal(6); hideCanais(escolher_RTP1, escolher_RTP2, escolher_SIC, escolher_SPORTTV, escolher_TVI)">
+                        	<img src="assets/tv-control/benficatv_logo.png" style="height: 28.19px; width: 120px;">
+                      </button>
+                  </div>
+                  </td>
+                  <td>
+                  <div style="text-align: left; margin-bottom: 17.5px; margin-left: 10px;">No ar:<br><b>SL Benfica vs. FC Porto</b></div>
+      			       </td>
+                	</tr>
+              </table>
+          </div>
+      	 </table>
+
+         <div id="canal_escolhido" style="display: none;"></div>
+
+         <div id="escolher_RTP1" style="display: none;"><button class="confirm_buttons" id="confirm" onclick="hideandshow(canal_escolhido, esperar); hide(escolher_RTP1); nonClickableCanais(); adicionarVoto(0); setTimeout(clickableCanais, 300000); setTimeout(hide_aguarde, 300000); startTimer();">Confirmar</button></div>
+
+         <div id="escolher_RTP2" style="display: none;"><button class="confirm_buttons" id="confirm" onclick="hideandshow(canal_escolhido, esperar); hide(escolher_RTP2); nonClickableCanais(); adicionarVoto(1); setTimeout(clickableCanais, 300000); setTimeout(hide_aguarde, 300000); startTimer();">Confirmar</button></div>
+
+          <div id="escolher_SIC" style="display: none;"><button class="confirm_buttons" id="confirm" onclick="hideandshow(canal_escolhido, esperar); hide(escolher_SIC); nonClickableCanais(); adicionarVoto(2); setTimeout(clickableCanais, 300000); setTimeout(hide_aguarde, 300000); startTimer();">Confirmar</button></div>
+
+         <div id="escolher_TVI" style="display: none;"><button class="confirm_buttons" id="confirm" onclick="hideandshow(canal_escolhido, esperar); hide(escolher_TVI); nonClickableCanais(); adicionarVoto(3); setTimeout(clickableCanais, 300000); setTimeout(hide_aguarde, 300000); startTimer();">Confirmar</button></div>
+
+         <div id="escolher_SPORTTV" style="display: none;"><button class="confirm_buttons" id="confirm" onclick="hideandshow(canal_escolhido, esperar); hide(escolher_SPORTTV); nonClickableCanais(); adicionarVoto(4); setTimeout(clickableCanais, 300000); setTimeout(hide_aguarde, 300000); startTimer();">Confirmar</button></div>
+
+         <div id="escolher_BTV" style="display: none;"><button class="confirm_buttons" id="confirm" onclick="hideandshow(canal_escolhido, esperar); hide(escolher_BTV); nonClickableCanais(); adicionarVoto(5); setTimeout(clickableCanais, 300000); setTimeout(hide_aguarde, 300000); startTimer();">Confirmar</button></div>
+
+        <div id="esperar" style="display: none; line-height: 5px;">Aguarde <span id="timer"></span> minutos<br>até poder votar novamente.</br></div>
+
+    </div>
+
+
+  </div>
+
+
+
+<!--                                                  OCUPACAO DOS WCS                                                  -->
+
+
+<div id="ocupacao_dos_wcs" style="display: none;">
+      <div id="atual" style="width: 600px; padding-top: 30px; line-height: 0px; display: inline-block;">
+        <table>
+          <tr>
+            <td>
+              <div id="homens">
+                <div id="text" style = "font-size: 15px;">
+                   Homens
+                  <p>&nbsp;</p>
+                </div>
+                <div id="homem_icon">
+                   <img src="assets/wc/homens.png" style="height: 80px; width: 30px; vertical-align: middle; text-align: center;" />
+                </div>
+
+                <div id = "estado_homens" onload="checkHomens()">
+                  <p>&nbsp;</p>
+                  <p id="texto_estado_homens" style="font-size: 20px;"></p>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <div id="mulheres">
+                <div id="text" style = "font-size: 15px;">
+                   Mulheres
+                   <p>&nbsp;</p>
+                </div>
+                <div id="mulher_icon">
+                   <img src="assets/wc/mulheres.png" style="height: 80px; width: 38.0px; vertical-align: middle; text-align: center;" />
+                </div>
+                <div id = "estado_mulheres" onload="checkMulheres()">
+                  <p>&nbsp;</p>
+                  <p id="texto_estado_mulheres" style="font-size: 20px;"></p>
+                </div>
+              </div>
+            </td>
+
+
+          </tr>
+        </table>
+      </div>
+
+      <div style="display: inline-block; width: 300px; float: right;">
+
+      <div id="tabela_fila_espera" style="float: right; padding-right: 18px;">
+
+      <table class="table_buttons">
+        <tr>
+            <td>
+
+
+            <div style="display: inline-block;">
+                <button class="main_menu_buttons" onclick="hide(ocupacao_dos_wcs); hide(servicos_div); show_alt(empregado_main); statusbar_chamar_empregado();" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Empregado</button>
+              </div>
+
+              <div style="display: inline-block;">
+               <button class="main_menu_buttons" onclick="hide(ocupacao_dos_wcs); hide(servicos_div); show_alt(ajuda_main); show_alt(ajuda_wc); statusbar_ajuda();" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Ajuda</button>
+              </div>
+            </td>
+            </tr>
+
+          <td>
+          <p style="font-size:20px;">Entrar em fila de espera: </p>
+
+        <div id="entrar_fila" style="width: 270px; height: 250px; border-style: solid; border-color: black;">
+            <table class="table_buttons">
+
+          <tr>
+                <td>
+                <div style="display: inline-block;">
+                    <button class="wc_buttons" id="botao_homem" onclick="show(entrar_homem); hide(entrar_mulher); selectedButton(botao_homem); clearButtons(botao_mulher, botao_mulher);">
+                          <img src="assets/wc/homens.png" style="height: 50px; width: 20px;">
+                    </button>
+                </div>
+                </td>
+                <td>
+                <div style="display: inline-block;">Pessoas em espera: <span id="var_homens"></span></div>
+                </td>
+                </tr>
+
+                <tr>
+                <td>
+                <div style="display: inline-block;">
+                    <button class="wc_buttons" id="botao_mulher" onclick="show(entrar_mulher); hide(entrar_homem); selectedButton(botao_mulher); clearButtons(botao_homem, botao_homem);">
+                          <img src="assets/wc/mulheres.png" style="height: 50px; width: 25px">
+                    </button>
+                </div>
+                </td>
+                <td>
+                <div style="display: inline-block;">Pessoas em espera: <span id="var_mulheres"></span></div>
+                 </td>
+                </tr>
+            </table>
+        </div>
+       </table>
+
+       <div id="estado_wc" style="display: none;"></div>
+
+       <div id="entrar_homem" style="display: none;"><button class="confirm_buttons" id="confirm_homem" onclick=" hideandshow(entrar_homem, esperar_wc); addFilaHomens(); showEstadoHomens(); nrHomens(); lockButton('confirm_homem'); lockButton('confirm_mulher'); vezHomens(); setInterval(aFrenteHomens, 1000);">Entrar na fila</button></div>
+       <div id="entrar_mulher" style="display: none;"><button class="confirm_buttons" id="confirm_mulher" onclick="hideandshow(entrar_mulher, esperar_wc); addFilaMulheres(); showEstadoMulheres(); nrMulheres(); lockButton('confirm_mulher'); lockButton('confirm_homem'); vezMulheres(); setInterval(aFrenteMulheres, 1000);">Entrar na fila</button></div>
+
+       <div id="esperar_wc" style="display: none; line-height: 5px;"><p>Entrou em fila de espera!</p><p>Será notificado em breve.</p><p><b>À sua frente: <span id="nr_frente"></span> pessoa(s).</b></p></div>
+
+
+  </div>
+  </div>
+
+</div>
+
+
+</div>
+
+<div id="newpedido" style="display: none;">
+
+	<table class="table_buttons" style="display: inline-block; float: left; padding-left: 18px;">
+
+		<tr><td>
+      <button class="pedido_buttons" id="pratos_dia" onclick="pratos_pratosdodia(); selectedButton(pratos_dia); clearButtons5(pratos_ent, pratos_beb, pratos_car, pratos_pei, pratos_sob);">
+      <table>
+          <tr>
+            <td style="width: 50px"><img src="assets/order/plate.png" style="display: inline; vertical-align: middle; width: 35px; height: 35px;"></td>
+            <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Pratos do Dia</td>
+          </tr>
+        </table>
+        </button>
+    </td></tr>
+		<tr><td><button class="pedido_buttons" id="pratos_ent" onclick="pratos_entradas(); selectedButton(pratos_ent); clearButtons5(pratos_beb, pratos_dia, pratos_car, pratos_pei, pratos_sob);"style="margin-top: 29px;"> <table>
+          <tr>
+            <td style="width: 50px"><img src="assets/order/bread.png" style="display: inline; vertical-align: middle; width: 35px; height: 35px;"></td>
+            <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Entradas</td>
+          </tr>
+        </table>
+        </button></button></td></tr>
+		<tr><td><button class="pedido_buttons" id="pratos_beb" onclick="pratos_bebidas(); selectedButton(pratos_beb); clearButtons5(pratos_ent, pratos_dia, pratos_car, pratos_pei, pratos_sob);"> <table>
+          <tr>
+            <td style="width: 50px"><img src="assets/order/drinks.png" style="display: inline; vertical-align: middle; width: 35px; height: 35px;"></td>
+            <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Bebidas</td>
+          </tr>
+        </table>
+        </button></button></td></tr>
+		<tr><td><button class="pedido_buttons" id="pratos_car" onclick="pratos_carnes(); selectedButton(pratos_car); clearButtons5(pratos_ent, pratos_beb, pratos_dia, pratos_pei, pratos_sob);"> <table>
+          <tr>
+            <td style="width: 50px"><img src="assets/order/meat.png" style="display: inline; vertical-align: middle; width: 35px; height: 35px;"></td>
+            <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Carnes</td>
+          </tr>
+        </table>
+        </button></button></td></tr>
+		<tr><td><button class="pedido_buttons" id="pratos_pei" onclick="pratos_peixes(); selectedButton(pratos_pei); clearButtons5(pratos_ent, pratos_beb, pratos_car, pratos_dia, pratos_sob);"> <table>
+          <tr>
+            <td style="width: 50px"><img src="assets/order/fish.png" style="display: inline; vertical-align: middle; width: 35px; height: 35px;"></td>
+            <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Peixes</td>
+          </tr>
+        </table>
+        </button></button></td></tr>
+    <tr><td><button class="pedido_buttons" id="pratos_sob" onclick="pratos_sobremesas(); selectedButton(pratos_sob); clearButtons5(pratos_ent, pratos_beb, pratos_car, pratos_pei, pratos_dia);"> <table>
+          <tr>
+            <td style="width: 50px"><img src="assets/order/dzrt.png" style="display: inline; vertical-align: middle; width: 35px; height: 35px;"></td>
+            <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Sobremesas</td>
+          </tr>
+        </table>
+        </button></button></td></tr>
+    <tr><td>
+      <button class="main_menu_buttons" style="margin-top: 29px;" onclick="hideandshow(newpedido, mainmenu); statusbar_empty(); setCurrentScreen(0); removeAll(); setPrecoParcial(0);">
+        <table>
+          <tr>
+          <td style="width: 50px"><img src="assets/back.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+          <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Voltar e cancelar</td>
+          </tr>
+        </table>
+      </button>
+    </td></tr>
+  </table>
+
+    <div style="border: 3px solid #000; width: 550px; height: 200px; display: inline-block; margin-top: 35px; border-radius: 12px;">
+      <div style="height: 25px; border-bottom: solid; font-size: 15px; text-align: left;">
+      <div style="width: 115px; display: inline-block; margin-left: 20px; border-right: 3px solid black;"><b>O meu pedido</b></div>
+      <div id="preco_div" style="display: inline-block; margin-left: 10px;"></div>
+      </div>
+      <div style="height: 170px; overflow-y: scroll; overflow-x: hidden;" id="tabela_pedido">
+
+      <div id="sempedidos" style="margin-top: 15px; text-align: justify; width: 500px; height: 150px; opacity: 0.5;">
+
+      <ol style="list-style-type: disc ">
+          <li>Escolha a categoria pretendida na tabela da esquerda.</li>
+          <li>Adicione o(s) prato(s) pretendido(s) tocando no botão "+" na tabela da direita.</li>
+          <li>Toque no botão "i" para obter mais informação sobre cada prato.</li>
+      </ol>
+      </div>
+
+      <div class="tableitems" id="table_bitoque" style="margin-top: 18px; display: none;" >
+    	<div style="display: inline-block; width: 150px; text-align: left;">Bitoque</div>
+    	<div style="display: inline-block; width: 100px; text-align: left;">€5.00</div>
+    	<div style="display: inline-block; width: 225px;">
+    	<div style="display: inline-block;">
+    		<button class="personalizar_button" id="voltar" onclick="show(pop_personalizar); show(pop_personalizar_bitoque);">Personalizar</button></div>
+      		<div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; color: red" onclick="removeBitoque();">Eliminar</button></div>
+      			<!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+    	</div>
+		</div>
+
+    <div class="tableitems" id="table_polvo" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Polvo à Lagareiro</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€8.00</div>
+      <div style="display: inline-block; width: 225px;">
+      <div style="display: inline-block;">
+        <button class="personalizar_button" id="voltar" onclick="show(pop_personalizar); show(pop_personalizar_polvo);">Personalizar</button></div>
+          <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; color: red" onclick="removePolvo();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+    <div class="tableitems" id="table_pao" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Cesto de Pão</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€0.65</div>
+      <div style="display: inline-block; width: 225px;">
+          <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; color: red; margin-left: 135px;" onclick="removePao();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+    <div class="tableitems" id="table_azeitonas" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Azeitonas</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€0.85</div>
+      <div style="display: inline-block; width: 225px;">
+              <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; margin-left: 135px; color: red" onclick="removeAzeitonas();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+    <div class="tableitems" id="table_pate" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Paté de Atum</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€0.50</div>
+      <div style="display: inline-block; width: 225px;">
+              <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; margin-left: 135px; color: red" onclick="removePate();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+    <div class="tableitems" id="table_queijo" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Queijo</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€0.70</div>
+      <div style="display: inline-block; width: 225px;">
+      <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; margin-left: 135px; color: red" onclick="removeQueijo();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+    <div class="tableitems" id="table_agua" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Água Luso</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€1.00</div>
+      <div style="display: inline-block; width: 225px;">
+      <div style="display: inline-block;">
+        <button class="personalizar_button" id="voltar" onclick="show(pop_personalizar); show(pop_personalizar_agua);">Personalizar</button></div>
+          <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; color: red" onclick="removeAgua();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+    <div class="tableitems" id="table_cola" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Coca-Cola</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€1.30</div>
+      <div style="display: inline-block; width: 225px;">
+      <div style="display: inline-block;">
+        <button class="personalizar_button" id="voltar" onclick="show(pop_personalizar); show(pop_personalizar_cola);">Personalizar</button></div>
+          <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; color: red" onclick="removeCola();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+    <div class="tableitems" id="table_nestea" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Nestea Pêssego</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€1.30</div>
+      <div style="display: inline-block; width: 225px;">
+      <div style="display: inline-block;">
+        <button class="personalizar_button" id="voltar" onclick="show(pop_personalizar); show(pop_personalizar_nestea);">Personalizar</button></div>
+          <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; color: red" onclick="removeNestea();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+
+
+      <div class="tableitems" id="table_picanha" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Picanha</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€8.50</div>
+      <div style="display: inline-block; width: 225px;">
+      <div style="display: inline-block;">
+        <button class="personalizar_button" id="voltar" onclick="show(pop_personalizar); show(pop_personalizar_picanha);">Personalizar</button></div>
+          <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; color: red" onclick="removePicanha();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+    <div class="tableitems" id="table_burger" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Burger</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€5.50</div>
+      <div style="display: inline-block; width: 225px;">
+      <div style="display: inline-block;">
+        <button class="personalizar_button" id="voltar" onclick="show(pop_personalizar); show(pop_personalizar_hamburger);">Personalizar</button></div>
+          <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; color: red" onclick="removeBurger();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+
+
+
+      <div class="tableitems" id="table_dourada" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Dourada no Forno</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€6.00</div>
+      <div style="display: inline-block; width: 225px;">
+      <div style="display: inline-block;">
+        <button class="personalizar_button" id="voltar" onclick="show(pop_personalizar); show(pop_personalizar_dourada);">Personalizar</button></div>
+          <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; color: red" onclick="removeDourada();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+    <div class="tableitems" id="table_atum" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Bifes de Atum</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€5.00</div>
+      <div style="display: inline-block; width: 225px;">
+      <div style="display: inline-block;">
+        <button class="personalizar_button" id="voltar" onclick="show(pop_personalizar); show(pop_personalizar_atum);">Personalizar</button></div>
+          <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; color: red" onclick="removeAtum();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+
+
+    <div class="tableitems" id="table_doce" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Doce da Casa</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€2.50</div>
+      <div style="display: inline-block; width: 225px;">
+      <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; margin-left: 135px; color: red" onclick="removeDoce();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+    <div class="tableitems" id="table_mousse" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Mousse de Chocolate</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€2.00</div>
+      <div style="display: inline-block; width: 225px;">
+      <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; margin-left: 135px; color: red" onclick="removeMousse();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+
+    <div class="tableitems" id="table_baba" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Baba de Camelo</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€2.00</div>
+      <div style="display: inline-block; width: 225px;">
+      <div style="display: inline-block;"><button class="personalizar_button" style="width: 90px; margin-left: 135px; color: red" onclick="removeBaba();">Eliminar</button></div>
+            <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+      </div>
+    </div>
+
+
+        <!--<table class="cenas" id="myTable"></table>-->
+      </div>
+
+      <!--<div id="preco_div" style="height: 30px; border-top: solid; font-size: 15px;"></div>-->
+    </div>
+
+    <div style="display: inline-block; float: right; padding-right: 18px;">
+
+	<table class="table_buttons" id="empregado_ajuda_pedido">
+        <tr>
+          <td>
+
+           <div style="display: inline-block;">
+                <button class="main_menu_buttons" onclick="hide(newpedido); show_alt(empregado_main); statusbar_chamar_empregado();" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Empregado</button>
+              </div>
+
+              <div style="display: inline-block;">
+               <button class="main_menu_buttons" onclick="hide(newpedido); show_alt(ajuda_main); statusbar_ajuda(); show_alt(ajuda_novopedido);" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Ajuda</button>
+              </div>
+
+          </td>
+        </tr>
+      </table>
+
+      <div style="border-style: solid; border-color: black; width: 270px; height: 300px; border-radius: 12px;">
+      <div id ="pratosselecionados" style="height: 30px; border-bottom: solid; font-size: 20px;"></div>
+      <div id="scrollbar" style="height: 260px; overflow-y: scroll; overflow-x: hidden;">
+
+
+      <table class="table_buttons" id="pratos_do_dia" style="display: none">
+      	<tr>
+      		<td style="width: 100px;"><img src="assets/order/bitoque.png" style="width: 110px; height: 70px; border: 3px solid #000;"></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Bitoque</b><br>€5,00</td>
+      		<td style="width: 27px;"><img src="assets/add.png" onclick="addBitoque();" style="width: 30px; height: 30px;"><img src="assets/info.png" onclick="show(info_pratos_div); show(info_bitoque);" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+
+        <!--<tr onclick="show(pop); show(pop_personalizar_polvo);">-->
+
+      	<tr>
+      		<td style="width: 100px;"><img src="assets/order/polvo.png" style="width: 110px; height: 70px; border: 3px solid #000;" ></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Polvo à Lagareiro</b><br>€8,00</td>
+      		<td style="width: 27px;" ><img src="assets/add.png" onclick="addPolvo();" style="width: 30px; height: 30px;"><img src="assets/info.png" onclick="show(info_pratos_div); show(info_polvo);" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+
+
+      <table class="table_buttons" id="pratos_de_entradas" style="display:none">
+
+        <tr>
+      		<td style="width: 100px;"><img src="assets/order/pao.png" style="width: 110px; height: 70px; border: 3px solid #000;"></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Cesto de Pão</b><br>€0,65</td>
+      		<td style="width: 27px;" onclick="addPao();"><img src="assets/add.png" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      	<tr>
+      		<td style="width: 100px;"><img src="assets/order/azeitonas.png" style="width: 110px; height: 70px; border: 3px solid #000;"></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Azeitonas</b><br>€0,85</td>
+      		<td style="width: 27px;" onclick="addAzeitonas();"><img src="assets/add.png" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      	<tr>
+      		<td style="width: 100px;"><img src="assets/order/pate.png" style="width: 110px; height: 70px; border: 3px solid #000;"></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Paté de Atum</b><br>€0,50</td>
+      		<td style="width: 27px;" onclick="addPate();"><img src="assets/add.png" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      	<tr>
+      		<td style="width: 100px;"><img src="assets/order/queijo.png" style="width: 110px; height: 70px; border: 3px solid #000;"></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Queijo</b><br>€0,70</td>
+      		<td style="width: 27px;" onclick="addQueijo();"><img src="assets/add.png" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      </table>
+
+      <table class="table_buttons" id="pratos_de_bebidas" style="display:none">
+
+      <tr>
+      		<td style="width: 100px;"><img src="assets/order/agua.png" style="width: 110px; height: 70px; border: 3px solid #000;"></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Água Luso</b><br>€1,00</td>
+      		<td style="width: 27px;" onclick="addAgua()"><img src="assets/add.png" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      	<tr>
+      		<td style="width: 100px;"><img src="assets/order/cola.png" style="width: 110px; height: 70px; border: 3px solid #000;"></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Coca-Cola</b><br>€1,30</td>
+      		<td style="width: 27px;" onclick="addCola()"><img src="assets/add.png" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      	<tr>
+      		<td style="width: 100px;"><img src="assets/order/nestea.png" style="width: 110px; height: 70px; border: 3px solid #000;"></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Nestea Pêssego</b><br>€1,30</td>
+      		<td style="width: 27px;" onclick="addNestea()"><img src="assets/add.png" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      </table>
+
+      <table class="table_buttons" id="pratos_de_carnes" style="display:none">
+
+      	<tr>
+      		<td style="width: 100px;"><img src="assets/order/bitoque.png" style="width: 110px; height: 70px; border: 3px solid #000;" ></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Bitoque</b><br>€5,00</td>
+      		<td style="width: 27px;" ><img src="assets/add.png" onclick="addBitoque()" style="width: 30px; height: 30px;"><img src="assets/info.png" onclick="show(info_pratos_div); show(info_bitoque);" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      		<tr>
+      		<td style="width: 100px;"><img src="assets/order/picanha.png" style="width: 110px; height: 70px; border: 3px solid #000;"></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Picanha</b><br>€8,50</td>
+      		<td style="width: 27px;" ><img src="assets/add.png" onclick="addPicanha()" style="width: 30px; height: 30px;"><img src="assets/info.png"  onclick="show(info_pratos_div); show(info_picanha);" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      		<tr>
+      		<td style="width: 100px;"><img src="assets/order/hamburguer.png" style="width: 110px; height: 70px; border: 3px solid #000;" ></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Burger</b><br>€5,50</td>
+      		<td style="width: 27px;" ><img src="assets/add.png" onclick="addBurger()" style="width: 30px; height: 30px;"><img src="assets/info.png" onclick="show(info_pratos_div); show(info_burger);" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+
+
+      </table>
+
+      <table class="table_buttons" id="pratos_de_peixes" style="display:none">
+
+      <tr>
+      		<td style="width: 100px;"><img src="assets/order/dourada.png" style="width: 110px; height: 70px; border: 3px solid #000;" ></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Dourada no Forno</b><br>€6,00</td>
+      		<td style="width: 27px;" ><img src="assets/add.png" onclick="addDourada()" style="width: 30px; height: 30px;"><img src="assets/info.png" onclick="show(info_pratos_div); show(info_dourada);" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      	<tr>
+      		<td style="width: 100px;"><img src="assets/order/polvo.png" style="width: 110px; height: 70px; border: 3px solid #000;" ></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Polvo à Lagareiro</b><br>€8,00</td>
+      		<td style="width: 27px;" ><img src="assets/add.png" onclick="addPolvo()" style="width: 30px; height: 30px;"><img src="assets/info.png" onclick="show(info_pratos_div); show(info_polvo);" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      	<tr>
+      		<td style="width: 100px;"><img src="assets/order/atum.png" style="width: 110px; height: 70px; border: 3px solid #000;" ></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Bifes de Atum</b><br>€5,00</td>
+      		<td style="width: 27px;" ><img src="assets/add.png" onclick="addAtum()" style="width: 30px; height: 30px;"><img src="assets/info.png" onclick="show(info_pratos_div); show(info_atum);" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+
+      </table>
+
+      <table class="table_buttons" id="pratos_de_sobremesas" style="display:none">
+
+      <tr>
+      		<td style="width: 100px;"><img src="assets/order/doce.png" style="width: 110px; height: 70px; border: 3px solid #000;"  ></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Doce da Casa</b><br>€2,50</td>
+      		<td style="width: 27px;" ><img src="assets/add.png" onclick="addDoce()" style="width: 30px; height: 30px;"><img src="assets/info.png" onclick="show(info_pratos_div); show(info_doce);" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      	<tr>
+      		<td style="width: 100px;"><img src="assets/order/mousse.png" style="width: 110px; height: 70px; border: 3px solid #000;"  ></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Mousse de Chocolate</b><br>€2,00</td>
+      		<td style="width: 27px;" ><img src="assets/add.png" onclick="addMousse()" style="width: 30px; height: 30px;"><img src="assets/info.png" onclick="show(info_pratos_div); show(info_mousse);" style="width: 30px; height: 30px;"></td>
+      	</tr>
+
+      	<tr>
+      		<td style="width: 100px;"><img src="assets/order/baba.png" style="width: 110px; height: 70px; border: 3px solid #000;"></td>
+      		<td style="text-align: left; width: 130px; padding-left: 7.5px;"><b>Baba de Camelo</b><br>€2,00</td>
+      		<td style="width: 27px;" ><img src="assets/add.png" onclick="addBaba()" style="width: 30px; height: 30px;"><img src="assets/info.png"   onclick="show(info_pratos_div); show(info_baba);" style="width: 30px; height: 30px;"></td>
+      	</tr>
+      </table>
+
+      </div>
+      </div>
+
+      <button class="main_menu_buttons" id="finalizar_pedido" style="margin-top: 20px;" onclick="hideandshow(newpedido, mainmenu); hide(middletable); show_alt(middletable2); statusbar_empty(); removeAll(); setPrecoParcial(0); runEstado();  setCurrentScreen(0); setTimeout(hide_middle, 30000);  ">
+        		<table>
+              <tr>
+            	<td style="width: 50px"><img src="assets/check.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+            	<td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Finalizar pedido</td>
+          		</tr>
+        		</table>
+      		</button>
+	</div>
+</div>
+
+
+
+<div id="estadopedido" style="display: none;">
+	<div style="border: 3px solid #000; width: 1140px; height: 200px; display: inline-block; margin-top: 35px; border-radius: 12px;">
+      <div style="height: 25px; border-bottom: solid; font-size: 15px;"><b>O meu pedido</b></div>
+      <div style="height: 170px; overflow-y: scroll; overflow-x: hidden;" id="tabela_estado">
+
+        <div class="tableitems" id="table_bitoque_estado" style="margin-top: 18px; display: none;">
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Bitoque</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div id="progress_bar_recebido_bitoque" style="background-color: #A9A9A9; width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_preparar_bitoque" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A preparar</div>
+            <div class="progress_bar_confecionar_bitoque" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A confecionar</div>
+            <div class="progress_bar_entregar_bitoque" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_bitoque" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+          <div style="display: inline-block;">
+            <button class="personalizar_button personalizar_bitoque" id="personalizar_estado_bitoque" onclick="show(pop_personalizar); show(pop_personalizar_bitoque);">Personalizar</button></div>
+              <div style="display: inline-block;"><button id="eliminar_estado_bitoque" class="personalizar_button personalizar_bitoque" style="width: 90px; color: red" onclick="removeBitoque();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_polvo_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Polvo à Lagareiro</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_preparar_polvo" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A preparar</div>
+            <div class="progress_bar_confecionar_polvo" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A confecionar</div>
+            <div class="progress_bar_entregar_polvo" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_polvo" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+          <div style="display: inline-block;">
+            <button class="personalizar_button personalizar_polvo" id="personalizar_estado_polvo" onclick="show(pop_personalizar); show(pop_personalizar_polvo);">Personalizar</button></div>
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_polvo" style="width: 90px; color: red" onclick="removePolvo();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_pao_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Cesto de Pão</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_entregar_pao" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_pao" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_pao" style="width: 90px; color: red; margin-left: 135px;" onclick="removePao();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_queijo_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Queijo</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_entregar_queijo" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_queijo" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_queijo" style="width: 90px; color: red; margin-left: 135px;" onclick="removeQueijo();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_azeitonas_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Azeitonas</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_entregar_azeitonas" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_azeitonas" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_azeitonas" style="width: 90px; color: red; margin-left: 135px;" onclick="removeAzeitonas();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_pate_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Paté</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_entregar_pate" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_pate" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_pate" style="width: 90px; color: red; margin-left: 135px;" onclick="removePate();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_picanha_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Picanha</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_preparar_picanha" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A preparar</div>
+            <div class="progress_bar_confecionar_picanha" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A confecionar</div>
+            <div class="progress_bar_entregar_picanha" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_picanha" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+          <div style="display: inline-block;">
+            <button class="personalizar_button personalizar_picanha" id="personalizar_estado_polvo" onclick="show(pop_personalizar); show(pop_personalizar_picanha);">Personalizar</button></div>
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_picanha" style="width: 90px; color: red" onclick="removePicanha();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_burger_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Burger</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_preparar_burger" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A preparar</div>
+            <div class="progress_bar_confecionar_burger" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A confecionar</div>
+            <div class="progress_bar_entregar_burger" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_burger" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+          <div style="display: inline-block;">
+            <button class="personalizar_button personalizar_burger" id="personalizar_estado_polvo" onclick="show(pop_personalizar); show(pop_personalizar_hamburguer);">Personalizar</button></div>
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_burger" style="width: 90px; color: red" onclick="removeBurger();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_dourada_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Dourada no Forno</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_preparar_dourada" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A preparar</div>
+            <div class="progress_bar_confecionar_dourada" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A confecionar</div>
+            <div class="progress_bar_entregar_dourada" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_dourada" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+          <div style="display: inline-block;">
+            <button class="personalizar_button personalizar_dourada" id="personalizar_estado_polvo" onclick="show(pop_personalizar); show(pop_personalizar_dourada);">Personalizar</button></div>
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_dourada" style="width: 90px; color: red" onclick="removeDourada();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_atum_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Bifes de Atum</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_preparar_atum" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A preparar</div>
+            <div class="progress_bar_confecionar_atum" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A confecionar</div>
+            <div class="progress_bar_entregar_atum" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_atum" style="width: 125px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+          <div style="display: inline-block;">
+            <button class="personalizar_button personalizar_atum" id="personalizar_estado_polvo" onclick="show(pop_personalizar); show(pop_personalizar_atum);">Personalizar</button></div>
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_atum" style="width: 90px; color: red" onclick="removeAtum();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+
+        <div class="tableitems" id="table_agua_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Água Luso</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_entregar_agua" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_agua" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+            </div>
+          <div style="display: inline-block; width: 225px;">
+          <div style="display: inline-block;">
+            <button class="personalizar_button personalizar_agua" id="personalizar_estado_polvo" onclick="show(pop_personalizar); show(pop_personalizar_agua);">Personalizar</button></div>
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_agua" style="width: 90px; color: red" onclick="removeAgua();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_cola_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Coca-Cola</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_entregar_cola" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_cola" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+            </div>
+          <div style="display: inline-block; width: 225px;">
+          <div style="display: inline-block;">
+            <button class="personalizar_button personalizar_cola" id="personalizar_estado_polvo" onclick="show(pop_personalizar); show(pop_personalizar_cola);">Personalizar</button></div>
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_cola" style="width: 90px; color: red" onclick="removeCola();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_nestea_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Nestea Pêssego</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_entregar_nestea" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_nestea" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+            </div>
+          <div style="display: inline-block; width: 225px;">
+          <div style="display: inline-block;">
+            <button class="personalizar_button personalizar_nestea" id="personalizar_estado_polvo" onclick="show(pop_personalizar); show(pop_personalizar_nestea);">Personalizar</button></div>
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_nestea" style="width: 90px; color: red" onclick="removeNestea();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_doce_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Doce da Casa</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_entregar_doce" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_doce" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_doce" style="width: 90px; color: red; margin-left: 135px;" onclick="removeDoce();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_mousse_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Mousse de Chocolate</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_entregar_mousse" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_mousse" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_mousse" style="width: 90px; color: red; margin-left: 135px;" onclick="removeMousse();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+        <div class="tableitems" id="table_baba_estado" style="margin-top: 18px; display: none;" >
+
+          <div style="display: inline-block; width: 150px; text-align: left;">Baba de Camelo</div>
+          <div style="display: inline-block; width: 670px; text-align: center; margin: 0 auto; border: 3px solid black; padding: 3px; border-radius: 12px;">
+            <div class="progress_bar_recebido" style="background-color: #A9A9A9; width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Recebido</div>
+            <div class="progress_bar_entregar_baba" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">A entregar</div>
+            <div class="progress_bar_entregue_baba" style="width: 208.34px; height: 30px; border: 3px solid transparent; display: inline-block;">Entregue</div>
+          </div>
+          <div style="display: inline-block; width: 225px;">
+              <div style="display: inline-block;"><button id="eliminar_estado_polvo" class="personalizar_button personalizar_baba" style="width: 90px; color: red; margin-left: 135px;" onclick="removeBaba();">Eliminar</button></div>
+                <!--<button onclick="dtabelai(1, tabelaI - 1);"><img src="assets/cross.png" style="width: 25px; height: 25px; margin-top: 2px;"></button>-->
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <button class="main_menu_buttons" id="voltar" style="margin-right: 870px; margin-top: 20px;" onclick="hideandshow(estadopedido, mainmenu); statusbar_empty();">
+        <table>
+          <tr>
+            <td style="width: 50px"><img src="assets/back.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+            <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Voltar</td>
+          </tr>
+        </table>
+      </button>
+</div>
+
+
+<div id="contafinal" style= "display: none;">
+
+  <div id="main_menu_conta">
+    <table class="table_buttons" id="empregado_ajuda_conta" style="display: inline-block; float: right; padding-right: 18px;">
+      <tr>
+        <td>
+          <div style="display: inline-block;">
+            <button class="main_menu_buttons" onclick="hide(contafinal); show_alt(empregado_main); statusbar_chamar_empregado();" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Empregado</button>
+          </div>
+          <div style="display: inline-block;">
+            <button class="main_menu_buttons" onclick="hide(contafinal); show_alt(ajuda_main); statusbar_ajuda(); show_alt(ajuda_conta);" style="width: 135px; font-size: 22.5px; vertical-align: middle;">Ajuda</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <div style="border: 3px solid #000; width: 350px; height: 225px; display: inline-block; margin-top: 35px; border-radius: 12px;">
+      <div style="height: 25px; border-bottom: solid; font-size: 15px; text-align: left;">
+      <div style="width: 350px; display: inline-block; text-align: center;"><b>Conta</b></div>
+      </div>
+      <div style="height: 170px; overflow-y: scroll; overflow-x: hidden;" id="tabela_conta">
+
+      <!--<div id="sempedidos_conta" style="margin-top: 15px; text-align: justify; width: 500px; height: 170px; opacity: 0.5;">
+
+      </div> -->
+
+      <div class="tableitems" id="conta_bitoque" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Bitoque</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€5.00</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+    <div class="tableitems" id="conta_polvo" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Polvo à Lagareiro</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€8.00</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+    <div class="tableitems" id="conta_pao" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Cesto de Pão</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€0.65</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+    <div class="tableitems" id="conta_azeitonas" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Azeitonas</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€0.85</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+    <div class="tableitems" id="conta_pate" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Paté de Atum</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€0.50</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+    <div class="tableitems" id="conta_queijo" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Queijo</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€0.70</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+    <div class="tableitems" id="conta_agua" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Água Luso</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€1.00</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+    <div class="tableitems" id="conta_cola" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Coca-Cola</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€1.30</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+    <div class="tableitems" id="conta_nestea" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Nestea Pêssego</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€1.30</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+      <div class="tableitems" id="conta_picanha" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Picanha</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€8.50</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+    <div class="tableitems" id="conta_burger" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Burger</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€5.50</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+      <div class="tableitems" id="conta_dourada" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Dourada no Forno</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€6.00</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+    <div class="tableitems" id="conta_atum" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Bifes de Atum</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€5.00</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+    <div class="tableitems" id="conta_doce" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Doce da Casa</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€2.50</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+    <div class="tableitems" id="conta_mousse" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Mousse de Chocolate</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€2.00</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+
+    <div class="tableitems" id="conta_baba" style="margin-top: 18px; display: none;" >
+      <div style="display: inline-block; width: 150px; text-align: left;">Baba de Camelo</div>
+      <div style="display: inline-block; width: 100px; text-align: left;">€2.00</div>
+      <div style="display: inline-block; width: 225px;">
+      </div>
+    </div>
+
+
+  </div>
+
+  <div style="height: 25px; border-top: solid; font-size: 15px; text-align: center;">
+    <div id="preco_conta" style="width: 350px; display: inline-block;"> <b>Total:</b> <span id= "preco_conta_span"></span></div>
+  </div>
+
+
+
+</div>
+
+    <table class="table_buttons" style="display: inline-block; float: left; padding-left: 18px;">
+
+        <tr><td style = "font-size: 25px;"><b>Métodos de Pagamento</b></td></tr>
+        <tr><td><br></td></tr>
+
+        <tr>
+          <td>
+          <button class="main_menu_buttons" id="dinheiro" onclick="show(confirmacao_dinheiro)">
+            <table>
+              <tr>
+                <td style="width: 50px"><img src="assets/money.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+                <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Dinheiro</td>
+              </tr>
+            </table>
+          </button>
+          </td>
+          </tr>
+
+          <tr>
+          <td>
+
+          <button class="main_menu_buttons" id="multibanco" onclick="show(confirmacao_multibanco);">
+            <table>
+              <tr>
+                <td style="width: 50px"><img src="assets/card.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+                <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Multibanco</td>
+              </tr>
+            </table>
+          </button>
+          </td>
+          </tr>
+
+          <tr><td><br></td></tr>
+
+          <tr>
+          <td>
+
+          <button class="main_menu_buttons" id="voltar" onclick=" hideandshow(contafinal, mainmenu); statusbar_empty(); setCurrentScreen(0); hide(empregado_ajuda); show(empregado_ajuda);">
+            <table>
+              <tr>
+                <td style="width: 50px"><img src="assets/back.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+                <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Voltar</td>
+              </tr>
+            </table>
+          </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+</div>
+
+
+<div id="aviso_wc" class="aviso" style= "display: none;">
+  <div class="conteudo_aviso">
+    <p>Ocupação dos WC's: CHEGOU A SUA VEZ!</p>
+    <button class="fechar">Confirmar</button>
+  </div>
+</div>
+
+<div id="aviso_pedido" class="aviso" style= "display: none;">
+  <div class="conteudo_aviso_pedido">
+    <p>O SEU PEDIDO FOI CONCLUÍDO COM SUCESSO!</p>
+    <p>Pode consultar o estado do seu pedido e alterar o mesmo em <b>"Ver e Alterar Pedidos"</b> (brevemente)</b>
+      <br>
+      <br>
+    <button class="fechar" onclick="hide(aviso_pedido)">Confirmar</button>
+  </div>
+</div>
+
+
+
+
+<div id="info_pratos_div" class="aviso" style= "display:none;">
+  <div id="info_bitoque" class="info_pratos" style= "display: none;">
+    <div class="conteudo_info">
+      <div style="text-align: justify;">Um clássico bife de porco grelhado com um delicioso ovo a cavalo, acompanhado de batatas fritas, arroz e salada.</div>
+      <br>
+      <button class="fechar" onclick="hide(info_pratos_div); hide(info_bitoque);">Voltar</button>
+    </div>
+  </div>
+
+  <div id="info_polvo" class="info_pratos" style= "display: none;">
+    <div class="conteudo_info">
+      <div style="text-align: justify;">Bem regado com azeite, bem ao gosto dos portugueses. Com maravilhosas batatas a murro e uma salada de pimentos e cebola.</div>
+      <br>
+      <button class="fechar" onclick="hide(info_pratos_div); hide(info_polvo);">Voltar</button>
+    </div>
+  </div>
+
+  <div id="info_picanha" class="info_pratos" style= "display: none;">
+    <div class="conteudo_info">
+      <div style="text-align: justify;">Uma relíquia trazida do Brasil. A clássica picanha de carne bovina é servida com ovo, salada, batatas fritas, arroz, feijão preto e fruta importada da terra dos cariocas.</div>
+      <br>
+      <button class="fechar" onclick="hide(info_pratos_div); hide(info_picanha);">Voltar</button>
+    </div>
+  </div>
+
+  <div id="info_burger" class="info_pratos" style= "display: none;">
+    <div class="conteudo_info">
+      <div style="text-align: justify;">O favorito de todas as idades. O nosso hambúrguer de carne de vaca é grelhado com sal e pimenta e servido no pão com uma preciosa fatia de bacon. É ainda acompanhado com as nossas batatas fritas caseiras, ovo e salada.</div>
+      <br>
+      <button class="fechar" onclick="hide(info_pratos_div); hide(info_burger);">Voltar</button>
+    </div>
+  </div>
+
+  <div id="info_dourada" class="info_pratos" style= "display: none;">
+    <div class="conteudo_info">
+      <div style="text-align: justify;">Deliciosa posta de dourada grelhada no forno com tomate. Acompanhada de batatas cozidas e salada.</div>
+      <br>
+      <button class="fechar" onclick="hide(info_pratos_div); hide(info_dourada);">Voltar</button>
+    </div>
+  </div>
+
+  <div id="info_atum" class="info_pratos" style= "display: none;">
+    <div class="conteudo_info">
+      <div style="text-align: justify;">Deliciosos bifes de atum grelhados no ponto na chapa. Acompanhados de salada e batatas cozidas.</div>
+      <br>
+      <button class="fechar" onclick="hide(info_pratos_div); hide(info_atum);">Voltar</button>
+    </div>
+  </div>
+
+  <div id="info_doce" class="info_pratos" style= "display: none;">
+    <div class="conteudo_info">
+      <div style="text-align: justify;">Um guloso doce de bolachas OREO com natas e leite condensado. Nada melhor do que isso para terminar uma ótima refeição!</div>
+      <br>
+      <button class="fechar" onclick="hide(info_pratos_div); hide(info_doce);">Voltar</button>
+    </div>
+  </div>
+
+  <div id="info_mousse" class="info_pratos" style= "display: none;">
+    <div class="conteudo_info">
+      <div style="text-align: justify;">Mousse de chocolate caseira, feita com chocolate suíço.</div>
+      <br>
+      <button class="fechar" onclick="hide(info_pratos_div); hide(info_mousse);">Voltar</button>
+    </div>
+  </div>
+
+  <div id="info_baba" class="info_pratos" style= "display: none;">
+    <div class="conteudo_info">
+      <div style="text-align: justify;">Com leite condensado cozido e ovos.</div>
+      <br>
+      <button class="fechar" onclick="hide(info_pratos_div); hide(info_baba);">Voltar</button>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+<div id="pop_personalizar">
+  <div id="pop_personalizar_bitoque" class="personalizar" style= "display: none;">
+    <div class="conteudo_personalizar">
+      <p>Personalização: <span id="nome_do_prato"> Bitoque</span></p>
+      <form id="opcoes_bitoque" style="text-align: left; font-size: 20px; vertical-align: middle;">
+        <input type="radio" name="estado_bife" value="mal_passado"> Bife Mal-Passado<br>
+        <input type="radio" name="estado_bife" value="medio" checked> Bife Médio<br>
+        <input type="radio" name="estado_bife" value="bem_passado"> Bife Bem-Passado<br>
+        <br>
+        <input type="checkbox" name="ovo" value="ovo" checked> Ovo<br>
+        <input type="checkbox" name="salada" value="salada" checked> Salada<br>
+        <input type="checkbox" name="batatas" value="batatas_fritas" checked> Batatas fritas<br>
+        <input type="checkbox" name="arroz" value="arroz" checked> Arroz<br>
+        <br>
+      </form>
+      <p><button class="fechar_confirm" onclick="fecharConfirm(pop_personalizar_bitoque);">Confirmar</button></p>
+      <p><button class="fechar_cancel" onclick="fecharCancel(pop_personalizar_bitoque, 'opcoes_bitoque');">Cancelar</button></p>
+    </div>
+  </div>
+
+  <div id="pop_personalizar_polvo" class="personalizar" style= "display: none;">
+    <div class="conteudo_personalizar">
+      <p>Personalização: <span id="nome_do_prato"> Polvo à Lagareiro</span></p>
+      <form id="opcoes_polvo" style="text-align: left; font-size: 20px;">
+        <input type="radio" name="estado_polvo" value="polvo" checked> Polvo<br>
+        <br>
+        <input type="checkbox" name="azeite_polvo" value="azeite" checked> Azeite<br>
+        <input type="checkbox" name="pimentos_polvo" value="pimentos" checked> Pimentos<br>
+        <input type="checkbox" name="cebola_polvo" value="cebola" checked> Cebola<br>
+        <input type="checkbox" name="batatas_murro" value="batatas_murro" checked> Batatas à murro<br>
+        <br>
+      </form>
+      <p><button class="fechar_confirm" onclick="fecharConfirm(pop_personalizar_polvo)">Confirmar</button></p>
+      <p><button class="fechar_cancel" onclick="fecharCancel(pop_personalizar_polvo, 'opcoes_polvo')">Cancelar</button></p>
+    </div>
+  </div>
+
+  <div id="pop_personalizar_dourada" class="personalizar" style= "display: none;">
+    <div class="conteudo_personalizar">
+      <p>Personalização: <span id="nome_do_prato"> Dourada</span></p>
+      <form id="opcoes_dourada" style="text-align: left; font-size: 20px;">
+        <input type="radio" name="estado_dourada" value="dourada" checked> Dourada<br>
+        <br>
+        <input type="checkbox" name="salada_dourada" value="salada" checked> Salada<br>
+        <input type="checkbox" name="batatas_dourada" value="batatas_cozidas" checked> Batatas cozidas<br>
+        <br>
+      </form>
+      <p><button class="fechar_confirm" onclick="fecharConfirm(pop_personalizar_dourada)">Confirmar</button></p>
+      <p><button class="fechar_cancel" onclick="fecharCancel(pop_personalizar_dourada, 'opcoes_dourada')">Cancelar</button></p>
+    </div>
+  </div>
+
+
+
+  <div id="pop_personalizar_agua" class="personalizar" style= "display: none;">
+    <div class="conteudo_personalizar">
+      <p>Personalização: <span id="nome_do_prato"> Água</span></p>
+      <form id="opcoes_agua" style="text-align: left; font-size: 20px;">
+        <input type="radio" name="estado_agua" value="fresca" checked> Fresca<br>
+        <input type="radio" name="estado_agua" value="natural"> Natural<br>
+        <br>
+        <input type="checkbox" name="addons_agua" value="gelo"> Com gelo<br>
+        <input type="checkbox" name="addons_agua" value="limao"> Com limão<br>
+        <br>
+      </form>
+      <button class="fechar_confirm" onclick="fecharConfirm(pop_personalizar_agua)">Confirmar</button>
+      <button class="fechar_cancel" onclick="fecharCancel(pop_personalizar_agua, 'opcoes_agua')">Cancelar</button>
+    </div>
+  </div>
+
+
+
+
+  <div id="pop_personalizar_cola" class="personalizar" style= "display: none;">
+    <div class="conteudo_personalizar">
+      <p>Personalização: <span id="nome_do_prato"> Coca-Cola</span></p>
+      <form id="opcoes_cola" style="text-align: left; font-size: 20px;">
+        <input type="radio" name="estado_cola" value="fresca" checked> Fresca<br>
+        <input type="radio" name="estado_cola" value="natural"> Natural<br>
+        <br>
+        <input type="checkbox" name="addons_cola" value="gelo" checked> Com gelo<br>
+        <input type="checkbox" name="addons_cola" value="limao" checked> Com limão<br>
+        <input type="checkbox" name="addons_cola" value="palhinha"> Palhinha<br>
+      </form>
+      <button class="fechar_confirm" onclick="fecharConfirm(pop_personalizar_cola)">Confirmar </button>
+      <button class="fechar_cancel" onclick="fecharCancel(pop_personalizar_cola, 'opcoes_cola')">Cancelar </button>
+    </div>
+  </div>
+
+
+
+  <div id="pop_personalizar_nestea" class="personalizar" style= "display: none;">
+    <div class="conteudo_personalizar">
+      <p>Personalização: <span id="nome_do_prato"> Nestea</span></p>
+      <form id="opcoes_nestea" style="text-align: left; font-size: 20px;">
+        <input type="radio" name="estado_nestea" value="fresca" checked> Fresco<br>
+        <input type="radio" name="estado_nestea" value="natural"> Natural<br>
+        <br>
+        <input type="checkbox" name="addons_nestea" value="gelo" checked> Com gelo<br>
+        <input type="checkbox" name="addons_nestea" value="limao"> Com limão<br>
+        <input type="checkbox" name="addons_nestea" value="palhinha"> Palhinha<br>
+      </form>
+      <button class="fechar_confirm" onclick="fecharConfirm(pop_personalizar_nestea)">Confirmar</button>
+      <button class="fechar_cancel" onclick="fecharCancel(pop_personalizar_nestea, 'opcoes_nestea')">Cancelar</button>
+    </div>
+  </div>
+
+
+  <div id="pop_personalizar_atum" class="personalizar" style= "display: none;">
+    <div class="conteudo_personalizar">
+      <p>Personalização: <span id="nome_do_prato"> Atum</span></p>
+      <form id="opcoes_atum" style="text-align: left; font-size: 20px;">
+        <input type="radio" name="estado_dourada" value="atum" checked> Atum<br>
+        <br>
+        <input type="checkbox" name="salada_dourada" value="salada" checked> Salada<br>
+        <input type="checkbox" name="batatas_dourada" value="batatas_cozidas" checked> Batatas cozidas<br>
+        <br>
+      </form>
+      <p><button class="fechar_confirm" onclick="fecharConfirm(pop_personalizar_atum)">Confirmar</button></p>
+      <p><button class="fechar_cancel" onclick="fecharCancel(pop_personalizar_atum, 'opcoes_atum')">Cancelar</button></p>
+    </div>
+  </div>
+
+  <div id="pop_personalizar_picanha" class="personalizar" style= "display: none;">
+    <div class="conteudo_personalizar">
+      <p>Personalização: <span id="nome_do_prato"> Picanha</span></p>
+      <form id="opcoes_picanha" style="text-align: left; font-size: 20px; vertical-align: middle;">
+        <input type="radio" name="estado_picanha" value="mal_passado"> Picanha Mal-Passada<br>
+        <input type="radio" name="estado_picanha" value="medio" checked> Picanha Média<br>
+        <input type="radio" name="estado_picanha" value="bem_passado"> Picanha Bem-Passada<br>
+        <br>
+        <input type="checkbox" name="ovo" value="ovo" checked> Ovo<br>
+        <input type="checkbox" name="salada" value="salada" checked> Salada<br>
+        <input type="checkbox" name="batatas" value="batatas_fritas" checked> Batatas fritas<br>
+        <input type="checkbox" name="arroz" value="arroz" checked> Arroz<br>
+        <input type="checkbox" name="feijao" value="feijao" checked> Feijão Preto<br>
+        <input type="checkbox" name="fruta" value="fruta" checked> Fruta(Ananás e Laranja)<br>
+        <br>
+      </form>
+      <p><button class="fechar_confirm" onclick="fecharConfirm(pop_personalizar_picanha);">Confirmar</button></p>
+      <p><button class="fechar_cancel" onclick="fecharCancel(pop_personalizar_picanha, 'opcoes_picanha');">Cancelar</button></p>
+    </div>
+  </div>
+
+  <div id="pop_personalizar_hamburguer" class="personalizar" style= "display: none;">
+    <div class="conteudo_personalizar">
+      <p>Personalização: <span id="nome_do_prato"> Hamburguer</span></p>
+      <form id="opcoes_hamburguer" style="text-align: left; font-size: 20px; vertical-align: middle;">
+        <input type="radio" name="estado_hamburguer" value="mal_passado"> Hamburguer Bem-Passado<br>
+        <input type="radio" name="estado_hamburguer" value="medio" checked> Hamburguer Médio<br>
+        <input type="radio" name="estado_hamburguer" value="bem_passado"> Hamburguer Bem-Passado<br>
+        <br>
+        <input type="checkbox" name="ovo" value="ovo" checked> Ovo<br>
+        <input type="checkbox" name="salada" value="salada" checked> Salada<br>
+        <input type="checkbox" name="batatas" value="batatas_fritas" checked> Batatas fritas<br>
+        <input type="checkbox" name="arroz" value="bacon" checked> Bacon<br>
+        <br>
+      </form>
+      <p><button class="fechar_confirm" onclick="fecharConfirm(pop_personalizar_hamburguer);">Confirmar</button></p>
+      <p><button class="fechar_cancel" onclick="fecharCancel(pop_personalizar_hamburguer, 'opcoes_hamburguer');">Cancelar</button></p>
+    </div>
+  </div>
+
+</div>
+
+<div id="confirmacao_dinheiro" class="aviso" style= "display: none;">
+  <div class="conteudo_dinheiro">
+    <p style="font-size: 30px;">Tem a certeza que pretende pagar a refeição <b><u>em dinheiro?</u></b></p>
+    <p style="font-size: 25px;"> <b>O preço total é:</b> <span id="preco_total_dinheiro"></span></p>
+      <br>
+    <button class="fechar_confirm" onclick="hide(confirmacao_dinheiro); hide(contafinal); show_alt(agradecimento_dinheiro);">Sim</button>
+    <button class="fechar_cancel" onclick="hide(confirmacao_dinheiro)">Não</button>
+  </div>
+</div>
+
+<div id="confirmacao_multibanco" class="aviso" style= "display: none;">
+  <div class="conteudo_multibanco">
+    <p style="font-size: 30px;">Tem a certeza que pretende pagar a refeição <b><u>com multibanco?</u></b></p>
+    <p style="font-size: 25px;"> <b>O preço total é:</b> <span id="preco_total_multibanco"></span></p>
+      <br>
+    <button class="fechar_confirm" onclick="hide(confirmacao_multibanco); hide(contafinal); show_alt(agradecimento_multibanco);">Sim</button>
+    <button class="fechar_cancel" onclick="hide(confirmacao_multibanco)">Não</button>
+  </div>
+</div>
+
+<!--
+window.location.reload();
+-->
+
+
+
+
+<div id="agradecimento_dinheiro" style="display: none;">
+
+  <div class="agradecimento">
+    <p style="font-size: 30px;"><b> O empregado virá recolher o dinheiro em breve!</b></p>
+    <p style="font-size: 20px;">Agradecemos a visita e esperamos que tenha disfrutado da sua refeição, volte sempre!</p>
+    <img src="assets/check.png" style="margin-top: 25px; width: 100px; height: 100px">
+  </div>
+
+  <div id="botao_voltar_inicio">
+  <button class="main_menu_buttons" style="margin-right: 870px; margin-top: 20px;" id="voltar" onclick="window.location.reload();">
+          <table>
+            <tr>
+              <td style="width: 50px"><img src="assets/back.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+              <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Voltar ao início</td>
+            </tr>
+          </table>
+        </button>
+  </div>
+
+</div>
+
+
+<div id="agradecimento_multibanco" style="display: none;">
+
+  <div class="agradecimento">
+    <p style="font-size: 30px;"><b> Insira o cartão no terminal Multibanco e siga as instruções no ecrã!</b></p>
+    <p style="font-size: 20px;">Agradecemos a visita e esperamos que tenha disfrutado da sua refeição, volte sempre!</p>
+    <img src="assets/check.png" style="margin-top: 25px; width: 100px; height: 100px">
+  </div>
+
+  <div id="botao_voltar_inicio">
+  <button class="main_menu_buttons" style="margin-right: 870px; margin-top: 20px;" id="voltar" onclick="window.location.reload();">
+          <table>
+            <tr>
+              <td style="width: 50px"><img src="assets/back.png" style="display: inline; vertical-align: middle; width: 50px; height: 50px;"></td>
+              <td style="width: 220px; text-align: left; padding-left: 30px; line-height: 25px;">Voltar ao início</td>
+            </tr>
+          </table>
+        </button>
+  </div>
+
+</div>
+
+
+
+
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,540 @@
+html {
+	font-family: 'OpenSans';
+	overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #FFE5B4;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('assets/font/OpenSans-Regular.ttf');
+}
+
+#main {
+
+	width: 1200px;
+	height:820px;
+	border:3px solid #000;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    background-color: #F1F1F1;
+    background-image: url("assets/pratocopo.png");
+}
+
+#statusbar {
+	height:70px;
+	border-bottom: 1px solid #000;
+	background-color: #444444;
+	color: white;
+
+}
+
+
+#clock {
+	display: inline;
+	font-size: 27.5px;
+	vertical-align: middle;
+	padding-right: 30px;
+	text-align: right;
+}
+
+#menu_position {
+	display: inline;
+	font-size: 20px;
+	vertical-align: middle;
+	padding-left: 30px;
+	line-height: 10px;
+}
+
+#logo {
+	width: 180px;
+	height: 60px;
+	display: block;
+	margin: auto;
+	vertical-align: middle;
+}
+
+
+.main_menu_buttons {
+	background-color: #DCDCDC;
+	width: 270px;
+	height: 70px;
+	font-size: 27.5px;
+	display: block;
+	margin-bottom: 20px;
+	border-radius: 12px;
+	color: black;
+	border: 3px solid #000;
+
+}
+
+.personalizar_button {
+	background-color: #DCDCDC;
+	width: 130px;
+	height: 40px;
+	font-size: 15px;
+	display: block;
+	margin-bottom: 20px;
+	border-radius: 12px;
+	color: black;
+	border: 3px solid #000;
+
+}
+
+.delete_button {
+	background-color: #DCDCDC;
+	width: 60px;
+	height: 40px;
+	font-size: 17.5px;
+	display: block;
+	margin-bottom: 20px;
+	border-radius: 12px;
+	color: black;
+	border: 3px solid #000;
+
+}
+
+.pedido_buttons {
+	background-color: #DCDCDC;
+	width: 270px;
+	height: 55px;
+	font-size: 27.5px;
+	display: block;
+	border-radius: 12px;
+	color: black;
+	border: 3px solid #000;
+
+}
+
+.main_menu_buttons:focus{
+	outline:0;
+}
+
+.pedido_buttons:focus{
+	outline:0;
+}
+
+.channel_buttons {
+	background-color: #DCDCDC;
+	width: 135px;
+	height: 70px;
+	font-size: 4px;
+	display: block;
+	margin-bottom: 20px;
+	border-radius: 12px;
+	color: black;
+	border: 3px solid #000;
+
+}
+
+.confirm_buttons {
+	background-color: #82FA58;
+	width: 200px;
+	height: 45px;
+	font-size: 25px;
+	display: block;
+	margin-bottom: 20px;
+	border-radius: 12px;
+	color: black;
+	border: 3px solid #000;
+}
+
+.confirm_buttons:focus{
+	outline:0;
+}
+
+.ajuda_div {
+	width: 1140px;
+	height: 220px;
+	border: 5px solid black;
+	margin-top: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+	text-align: left;
+	display: none;
+	font-size: 17px;
+}
+
+.empregado_div {
+	width: 1140px;
+	height: 220px;
+	border: 5px solid black;
+	font-size: 50px;
+	margin-top: 25px;
+	line-height: 16px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 200px;
+}
+
+.agradecimento {
+	width: 1140px;
+	height: 240px;
+	border: 5px solid black;
+	margin-top: 25px;
+	line-height: 2px;
+	text-align: center;
+}
+
+#ver_ou_pagar_conta{
+	opacity: 0.6;
+    	cursor: not-allowed;
+}
+
+
+#ajuda{
+	opacity: 0.6;
+    	cursor: not-allowed;
+}
+
+#empregado{
+	opacity: 0.6;
+    	cursor: not-allowed;
+}
+
+.table_buttons {
+	padding-top: 30px;
+	text-align: center;
+
+}
+
+
+table.cenas td{
+    width: 183px;
+    height: 10px;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+
+#pratocopo {
+    width:55%;
+    height:55%;
+    margin-top: -40px;
+}
+
+#servicos_buttons {
+	padding-top: 30px;
+	text-align: center;
+}
+
+#servicos_menu_entrada_1 {
+	text-align: left;
+	width: 500px;
+	font-size: 17.5px;
+	padding-top: 45px;
+}
+
+#servicos_menu_entrada_2 {
+	text-align: left;
+	width: 500px;
+	font-size: 17.5px;
+	padding-top: 60px;
+}
+
+#servicos_menu_entrada_3 {
+	text-align: left;
+	width: 500px;
+	font-size: 17.5px;
+	padding-top: 70px;
+	padding-right: 20px;
+}
+
+
+#servicos2{
+	visibility: hidden;
+}
+
+#ajuda2{
+	visibility: hidden;
+}
+
+#ver_ou_pagar_conta2{
+	visibility: hidden;
+}
+
+#homens{
+	display: inline-block;
+	border: 3px solid #000;
+	padding-top: 50px;
+	text-align: center;
+	padding: 20px;
+	width: 150px;
+	height: 200px;
+}
+
+#mulheres{
+	display: inline-block;
+	border: 3px solid #000;
+	padding-top: 20px;
+	text-align: center;
+	padding: 20px;
+	width: 150px;
+	height: 200px;
+}
+
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+body {
+  background: #999;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid #999;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+.chart div {
+  font: 10px;
+  text-align: right;
+  color: white;
+  padding: 6px;
+}
+
+
+.container {
+  width: 550px;
+  overflow: hidden;
+  border:3px solid #000;
+  display: inline-block;
+  text-align: left;
+  margin-top: 35px;
+  padding: 10px;
+}
+
+.horizontal .progress-bar {
+  float: left;
+  height: 45px;
+  width: 100%;
+  padding: 12px 0;
+}
+
+.horizontal .progress-track {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: #fff;
+}
+
+.horizontal .progress-fill1 {
+  position: relative;
+  background: #666;
+  height: 20px;
+  width: 10%;
+  color: #fff;
+  text-align: center;
+  font-family: "Lato","Verdana",sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.horizontal .progress-fill2 {
+  vertical-align: left;
+
+  display:  inline-block;
+  background: #666;
+  height: 20px;
+  width: 20%;
+  color: #fff;
+  text-align: left;
+  font-family: "Lato","Verdana",sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.horizontal .progress-fill3 {
+  position: relative;
+  background: #666;
+  height: 20px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-family: "Lato","Verdana",sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.wc_buttons {
+	background-color: #DCDCDC;
+	width: 80px;
+	height: 70px;
+	font-size: 12.5px;
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+	border-radius: 12px;
+	color: black;
+	border: 3px solid #000;
+
+}
+
+.wc_buttons:focus{
+	outline:0;
+}
+
+
+.aviso {
+    display: none;
+		position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1198px;
+    height: 820px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.personalizar {
+    display: none;
+		position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1198px;
+    height: 820px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.conteudo_aviso {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 5px solid #444444;
+    width: 80%;
+		border-radius: 12px;
+		font-size: 20px;
+}
+
+.conteudo_dinheiro {
+    background-color: #fefefe;
+    margin: 7% auto;
+    padding: 10px;
+    border: 5px solid #444444;
+    width: 80%;
+		border-radius: 12px;
+		font-size: 20px;
+}
+
+.conteudo_multibanco {
+    background-color: #fefefe;
+    margin: 7% auto;
+    padding: 10px;
+    border: 5px solid #444444;
+    width: 80%;
+		border-radius: 12px;
+		font-size: 20px;
+}
+
+.conteudo_aviso_pedido {
+    background-color: #fefefe;
+    margin: 7% auto;
+    padding: 20px;
+    border: 5px solid #444444;
+    width: 55%;
+		border-radius: 12px;
+		font-size: 20px;
+}
+
+.conteudo_personalizar {
+    background-color: #fefefe;
+    margin: 7% auto;
+		margin-right: 10px;
+    border: 5px solid #444444;
+    width: 25%;
+		height: 65%;
+		border-radius: 12px;
+		font-size: 25px;
+	padding: 10px;
+}
+
+
+
+
+.conteudo_info {
+    background-color: #fefefe;
+    margin: 20% auto;
+		margin-right: 10px;
+    border: 5px solid #444444;
+    width: 25%;
+		height: auto;
+		border-radius: 12px;
+		font-size: 17.5px;
+		padding: 15px;
+		text-align: center;
+}
+
+
+.fechar {
+    color: green;
+    font-size: 28px;
+    font-weight: bold;
+		background-color: #DCDCDC;
+		border: 3px solid #444444;
+		border-radius: 12px;
+}
+
+.fechar_confirm {
+	width: 200px;
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
+		background-color: #DCDCDC;
+		border: 3px solid #444444;
+		border-radius: 12px;
+}
+
+
+.fechar_cancel {
+	width: 200px;
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+		background-color: #DCDCDC;
+		border: 3px solid #444444;
+		border-radius: 12px;
+}
+
+#ver_e_alterar_estado_pedido{
+	opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+#myBar {
+    width: 5%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white;
+}
+
+input[type='radio'] {
+	transform: scale(2);
+	padding-right: 100px;
+}
+input[type='checkbox'] { transform: scale(2); }
