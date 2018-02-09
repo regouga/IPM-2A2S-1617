@@ -4,7 +4,7 @@ The Com.ISTo is an interactive table where you can view the restaurant's menu, o
 Learn more: https://fenix.tecnico.ulisboa.pt/disciplinas/IPM20111326/2016-2017/2-semestre/barista
 
 ### How to run
-Simply download the .zip and double click on "index.hmtl".
+Simply download the .zip and double click on "index.html".
 
 #### Language
 HTML5 / CSS / Javascript
