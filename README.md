@@ -5,6 +5,7 @@ Learn more: https://fenix.tecnico.ulisboa.pt/disciplinas/IPM20111326/2016-2017/2
 
 ### How to run
 Simply download the .zip and double click on "index.html".
+<br> You can try it here, as well: https://regouga.github.io/IPM-2A2S-1617/index.html
 
 #### Language
 HTML5 / CSS / Javascript
