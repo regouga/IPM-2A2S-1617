@@ -6,7 +6,7 @@ Learn more: https://fenix.tecnico.ulisboa.pt/disciplinas/IPM20111326/2016-2017/2
 ### How to run
 Simply download the .zip and double click on "index.html".
 <br> You can try it here, as well: https://regouga.github.io/IPM-2A2S-1617/index.html
-<br> Note: the project was optimized to work with Google Chrome. If you run in on other browsers, some features may not work properly. There are also some known bugs if you run the application using the website listed above -- if you want the best experience, please download the full file.
+<br><br> Note: the project was optimized to work with Google Chrome. If you run in on other browsers, some features may not work properly. There are also some known bugs if you run the application using the website listed above -- if you want the best experience, please download the full file.
 
 #### Language
 HTML5 / CSS / Javascript
